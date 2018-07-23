@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Créer un potin</title>
+  </head>
+  <body>
+    <h1>Le tavernier est à ton écoute !</h1>
+    <p>Donnes lui les ragots nouveaux</p>
+    <form action='/gossips/new' method='POST'>
+      <p>
+        Ton potin :
+      </p>
+      Quel est ton nom : <input type='text' name='gossip_author'/><br/>
+      Qu'as-tu à dire : <input type='text' name='gossip_content'/><br/>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>

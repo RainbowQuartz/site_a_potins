@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Salutations Voyageur&#183;se</h1>
+      <p>La liste des potins n'est présentement point disponible.</p>
+      <p>
+        Souhaitez-vous <a href="/gossips/new">confier un potin au tavernier ?</a>
+      <p>
+      <% gossips.each_index do |gossip| %>
+        <p>Voici le potin n°<%=gossip + 1%> </br>
+          <a href="/gossip/<%=gossip%>">cliquez ici</a>
+        </p>
+      <% end %>
+  </body>
+</html>
